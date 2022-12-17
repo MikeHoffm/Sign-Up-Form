@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Up Form</title>
+</head>
+<body>
+        <div class="main-left">
+            <div class="card-img">
+                <div class="card-body">
+                    <h1>ARTHAUS</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-right">
+
+            <div class="right-head">
+                <h2>Welcome to ARTHAUS galleries! We are a fake art gallery, want to submit your art to one of our many nonexistent locations? Sign up now to get it started! </h2>
+                <p>"Art washes away from the soul the dust of everyday life" - Pablo Picasso.</p>
+            </div>
+
+            <div class="form-container">
+               <form action="post">
+                    <h3>Let's do this</h3>
+
+                    <div class="form-name">
+                        <label for="first">First Name</label>
+                        <input type="text" id="first" name="first_name" required>
+                        
+                        <label for="last">Last Name</label>
+                        <input type="text" id="last" name="last_name" required>
+                    </div>
+
+                    <div class="form-contact">
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email" required >
+
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="user_phone">
+                    </div>
+
+                    <div class="form-pass">
+                        <label for="pass">Password:</label>
+                        <input type="password" id="pass" name="user_pass" redquired >
+
+                        <label for="confirm-pass">Confirm Password</label>
+                        <input type="password" id="confirm-pass" name="user_pass" required >
+                    </div>
+                
+                </form> 
+            </div>
+
+            <button class="sign_submit">Sign Up</button>
+
+            <h4>Already have an account? Log In</h4>
+            
+        </div>
+</body>
+</html>
