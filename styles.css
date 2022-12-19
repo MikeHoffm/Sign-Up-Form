@@ -3,56 +3,215 @@ html {
     height: 100%;
     width: 100%;
  }
- 
+
+ :root {
+   font-family: 'Sarabun', sans-serif;
+   text-align: center;
+   color: whitesmoke;
+ }
+
  body {
     margin: 0px;
     min-height: 100%;
-    width: 100%;
-    border: 2px solid red;
-    display: flex;
+    min-width: 100%;
  }
 
- .main-left {
-    border: 3px solid blue;
-    flex-grow: 1;
-    display: flex;
+ /* Hero Image */ 
+
+ .logo-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
  }
 
- .main-right {
-    color: white;
-    border: 3px solid green;
-    flex-grow: 4;
+ .logo-container {
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 10vh;
+   background-image: url("images/paint2.jpg");
+ }
+
+ h1 {
+   font-family: 'Michroma', sans-serif;
+ }
+
+ .arthaus {
+   width: 2rem;
+ }
+
+ /* Intro Content */
+ .main-container {
+   background-color: #0a3380;
+   padding-bottom: 1rem;
+ }
+
+ .main-head {
+   padding: 1rem;
+ }
+
+
+ /* Form Stuff */
+.form-container {
+   background-color: rgb(211, 75, 26);
+   box-shadow: 1rem 1rem 5rem black;
+   border-radius: 10px;
+   padding: 1rem 0 2rem 0;
+ }
+
+ input {
+  width: 15rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: none;
+  margin: .5rem;
+ }
+
+ input:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 .2rem rgb(91, 91, 236);
+  border-radius: 8px;
+ }
+
+ [required]:valid:focus {
+  outline: none;
+  box-shadow: 0 0 0 .2rem rgb(18, 95, 18);
+  background-color: rgb(161, 236, 161);
+  border-radius: 8px;
+ }
+
+ [required]:invalid:focus {
+  outline: none;
+  border: none;
+  box-shadow: 0 0 0 .2rem red;
+  background-color:rgb(248, 158, 123);
+ }
+
+label {
+  font-weight: bold;
+} 
+
+ .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .3rem;
+  margin: 1rem 1rem 1rem 0;
+ }
+ 
+ .sign_submit {
+   margin-top: 2rem;
+   background-color: orange;
+   border: none;
+   border-radius: 16px;
+   width: 10rem;
+   height: 3rem;
+
+   font-size: 1rem;
+   color: white;
+   font-weight: bold;
+ }
+
+ /* Footer */
+ a{
+  text-decoration: none;
+  color: orange;
+  font-weight: bold;
+  font-size: 1.09rem;
+ }
+
+ .sign_submit:hover {
+  background-color: orangered;
+  color: white;
+ }
+
+ a:hover {
+  color: orangered;
+ }
+
+
+ /* Desktop */ 
+@media (min-width: 1000px) {
+
+  body{
+    min-height: 100%;
+    min-width: 100%;
+    display: flex;
+  }
+
+  :root {
+    text-align: left;
+  }
+
+  .logo-container {
+    display: flex;
+    height: 100vh;
+    width: 30vw;
+  }
+
+  .main-container {
+    width: 70vw;
     display: flex;
     flex-direction: column;
-    background-color: rgb(12, 18, 44)
- }
+  }
 
- .card-img {
-    flex-grow: 1;
-    background-image: url("images/Paint.jpg");
-    background-size: cover;
- }
-
-.card-body {
-    margin-top: 20vh;
-    border: 3px solid red;
-    display: flex;
-    background: black;
-    opacity: 0.8;
- }
-
- h1{
-    border: 5px solid green;
-    color: white;
-    opacity: 1;
+  .main-head {
+    margin-top: 10vh;
     justify-content: center;
-    font-size: 3rem;
- }
+    align-items: center;
+  }
 
- .right-head {
-border: 5px solid green;
- }
+  .form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh;
+    width: 70vw;
+  }
 
- .form-container {
-    border: 3px solid orange;
- }
+  form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+  }
+
+   .section {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+   }
+
+ label {
+    border: 5px solid pink;
+  }
+  
+  input {
+    width: 18rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+   }
+
+   .sign_submit {
+    width: 20vw;
+   }
+
+   footer {
+    padding-left: 2vw;
+   }
+
+   .dev-tag {
+    margin-left: 1vw;
+   }
+}

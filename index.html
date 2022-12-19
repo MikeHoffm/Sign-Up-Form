@@ -5,58 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Sign Up Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Sarabun&display=swap" rel="stylesheet">
+    <title>Sign Up</title>
 </head>
 <body>
-        <div class="main-left">
-            <div class="card-img">
-                <div class="card-body">
-                    <h1>ARTHAUS</h1>
+       
+            <div class="logo-container">
+                <div class="logo-body">
+                    <h1>ARTHAÜS</h1>
+                    <img class="arthaus" src="images/arthaus2.png" alt="arthaus logo">
                 </div>
             </div>
-        </div>
+    
 
-        <div class="main-right">
+        <div class="main-container">
 
-            <div class="right-head">
-                <h2>Welcome to ARTHAUS galleries! We are a fake art gallery, want to submit your art to one of our many nonexistent locations? Sign up now to get it started! </h2>
-                <p>"Art washes away from the soul the dust of everyday life" - Pablo Picasso.</p>
+            <div class="main-head">
+                <h3>Welcome to ARTHAUS galleries! We are a fake art gallery, want to submit your art to one of our many nonexistent locations? Sign up now to get it started! </h3>
+                <p>"Art washes away from the soul the dust of everyday life" - <strong>Pablo Picasso</strong>.</p>
             </div>
 
             <div class="form-container">
+                <h2>Let's Do This</h2>
                <form action="post">
-                    <h3>Let's do this</h3>
-
-                    <div class="form-name">
-                        <label for="first">First Name</label>
-                        <input type="text" id="first" name="first_name" required>
+                    
+                    <div id="form-name" class="section">
+                       <!--<label for="first">First Name</label> --> 
+                        <input type="text" id="first" name="first_name" placeholder="First Name *" required>
                         
-                        <label for="last">Last Name</label>
-                        <input type="text" id="last" name="last_name" required>
+                        <!-- <label for="last">Last Name</label>-->
+                        <input type="text" id="last" name="last_name" placeholder="Surname *" required>
                     </div>
 
-                    <div class="form-contact">
-                        <label for="mail">Email:</label>
-                        <input type="email" id="mail" name="user_email" required >
+                    <div id="form-contact" class="section">
+                        <!--<label for="mail">Email</label> -->
+                        <input type="email" id="mail" name="user_email" placeholder="Email *" required >
 
-                        <label for="phone">Phone Number</label>
-                        <input type="tel" id="phone" name="user_phone">
+                        <!-- <label for="phone">Telephone</label>-->
+                        <input type="tel" id="phone" name="user_phone" placeholder="Phone" minlength="10" maxlength="10">
                     </div>
 
-                    <div class="form-pass">
-                        <label for="pass">Password:</label>
-                        <input type="password" id="pass" name="user_pass" redquired >
+                    <div id="form-pass" class="section">
+                        <!--<label for="pass">Password</label> -->
+                        <input type="password" id="pass" name="user_pass" required placeholder="Password *">
 
-                        <label for="confirm-pass">Confirm Password</label>
-                        <input type="password" id="confirm-pass" name="user_pass" required >
+                        <!-- <label for="confirm-pass">Confirm Password</label>-->
+                        <input type="password" id="confirm-pass" name="user_pass" required placeholder="Confirm *" >
+
                     </div>
+
+                <button class="sign_submit" type="submit">Sign Up</button>
                 
                 </form> 
             </div>
 
-            <button class="sign_submit">Sign Up</button>
-
-            <h4>Already have an account? Log In</h4>
+            <footer>
+                <h4>Already have an account? <a href="#">Log In</a></h4>
+                <h3 class="dev-tag">Coded by Mike_TheDev</h3> 
+            </footer>
             
         </div>
 </body>
