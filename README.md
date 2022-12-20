@@ -3,7 +3,7 @@ Project Live Link:
 
 Project Summary: 
 - HTML/CSS Form with Form Validation. 
-- Mobile first design, w/Media Query for Desktop.Photo by:
+- Mobile first design, w/Media Query for Desktop.
 
 Credit:
 - Photo by Steve Johnson on Unsplash
