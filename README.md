@@ -1,4 +1,11 @@
-Photo by <a href="https://unsplash.com/@steve_j?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Steve Johnson</a> on <a href="https://unsplash.com/s/photos/paint?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+Project Live Link: 
+- https://mikehoffm.github.io/Sign-Up-Form/
 
-  https://unsplash.com/photos/NZlZ0awM_pQ
+Project Summary: 
+- HTML/CSS Form with Form Validation. 
+- Mobile first design, w/Media Query for Desktop.Photo by:
+
+Credit:
+- Photo by Steve Johnson on Unsplash
+- Link to Photo: https://unsplash.com/photos/OL3NXdEwfnI
+- ARTHAUS logo self-made

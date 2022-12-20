@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="images/arthaus2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Sarabun&display=swap" rel="stylesheet">
@@ -21,15 +22,16 @@
     
 
         <div class="main-container">
-
+        
             <div class="main-head">
                 <h3>Welcome to ARTHAUS galleries! We are a fake art gallery, want to submit your art to one of our many nonexistent locations? Sign up now to get it started! </h3>
                 <p>"Art washes away from the soul the dust of everyday life" - <strong>Pablo Picasso</strong>.</p>
             </div>
 
             <div class="form-container">
-                <h2>Let's Do This</h2>
-               <form action="post">
+                <h2>Let's Get You Started</h2>
+                <p class="asterisk">Required fields marked with an *</p>
+               <form>
                     
                     <div id="form-name" class="section">
                        <!--<label for="first">First Name</label> --> 
@@ -49,7 +51,7 @@
 
                     <div id="form-pass" class="section">
                         <!--<label for="pass">Password</label> -->
-                        <input type="password" id="pass" name="user_pass" required placeholder="Password *">
+                        <input type="password" id="pass" name="user_pass" value ="" required placeholder="Password *">
 
                         <!-- <label for="confirm-pass">Confirm Password</label>-->
                         <input type="password" id="confirm-pass" name="user_pass" required placeholder="Confirm *" >
